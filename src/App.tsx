@@ -17,7 +17,7 @@ function DrumPad({keyName, src, setDisplay} : DrumPadProps) {
   }  
 
   return (
-    <div id={src} className='drum-pad' onClick={handleClick}>
+    <div id={src} className='drum-pad' onClick={handleClick} tabIndex={0}>
       <audio id={keyName} src={fccAudioSrc + src + ".mp3"} className='clip'></audio>
       {keyName}
     </div>
